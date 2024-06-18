@@ -1,0 +1,75 @@
+html , body{
+    padding:0px;
+    margin:0px;
+    height:100vh;
+    width:100vw;
+    font-family: Roboto;
+    
+}
+body{
+    position: relative; 
+    display: flex;
+    background-image: url(heroimg1.jpeg);
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position: center top;
+    margin-bottom: 5000px;
+    z-index: -100;
+}
+.header{
+    position: absolute; 
+    display: flex;
+    padding-left: 460px;
+    margin-top:10px;
+    right:2px;
+}
+.header div{
+    display: inline;
+    color:white;
+    font-size:8px;
+    font-weight: 300;
+    margin-right:15px;
+}
+.location{
+    position: absolute;
+    top:100px;
+    
+}
+.location div{
+    display: flex;
+    color:white;
+    font-size:12px;
+    font-weight: 400;
+    box-shadow: 0 0 0px 0 ;
+    background: inherit;
+    backdrop-filter: blur(10px);
+    border-top-right-radius:25px;
+    border-bottom-right-radius:25px;
+}
+.india{
+    background: #FF671F;
+background: linear-gradient(to right, #FF671F 0%, #9A9A9A 41%, #046A38 53%);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+
+
+}
+.location div p{
+    padding:5px 10px 5px 8px;
+    margin:0px;
+    user-select: none;
+}
+.clgnameintro{
+    position: absolute;
+    top: 110px;
+    right:40px;
+    color: white;
+    line-height: 30px;
+    user-select: none;
+}
+.clgname:hover{
+
+
+}
+
+
