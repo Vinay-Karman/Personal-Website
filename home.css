@@ -3,9 +3,13 @@ html , body{
     margin:0px;
     height:100vh;
     width:100vw;
-    font-family: Roboto;
+    font-family: DM Sans;
+
     
 }
+/* div{
+    border:1px solid red;
+} */
 body{
     position: relative; 
     display: flex;
@@ -13,14 +17,33 @@ body{
     background-size:cover;
     background-repeat: no-repeat;
     background-position: center top;
+    background-color: #fffaf1;
     margin-bottom: 5000px;
     z-index: -100;
+    user-select: none;
+}
+a:visited{
+    color:inherit;
+}
+.home{
+    position:absolute;
+    display: flex;
+    top:6px;
+    left:25px;
+    font-weight: 300;
+    font-size:10px;
+    color:white;
+    padding:5px 10px 5px 10px;
+    border-radius:2px;
+    cursor:pointer;
+    
+    
 }
 .header{
     position: absolute; 
-    display: flex;
+    display: flex; 
     padding-left: 460px;
-    margin-top:10px;
+    margin-top:12px;
     right:2px;
 }
 .header div{
@@ -59,17 +82,137 @@ background: linear-gradient(to right, #FF671F 0%, #9A9A9A 41%, #046A38 53%);
     margin:0px;
     user-select: none;
 }
+
 .clgnameintro{
-    position: absolute;
-    top: 110px;
-    right:40px;
-    color: white;
-    line-height: 30px;
+    color:white;
+    position:absolute;
+    display: flex;
+    grid-template-rows: 1fr;
+    top:30%;
+    left:64%;
+}
+.clgnameintro div{
+    position:absolute;
+    top:100%;
+}
+.clgname{
+    color:white;
+    position:absolute;  
+    display: flex;
+    width:160px; 
+    height:20px;
+    background:transparent;
+    padding-left:0px;
+    border:none;
+    overflow: hidden;
+}
+
+.clgname:before{
+    position:absolute;  
+    transform:translate(-50% , -50%);
+    content:'Indian Institue of Science';
+    top:7px;
+    left:75px;
+    white-space: nowrap;
+    transition: 0.5s;
+}
+.clgname:after{
+    position:absolute;  
+    transition-duration: 0.5s;
+    transform:translate(-50% , -50%);
+    content:'भारतीय विज्ञान संस्थान';
+    white-space: nowrap;
+    top:50px;
+    left:58px;
+
+}
+.clgname:hover:before{
+    top:-15px;
+}
+.clgname:hover:after{
+    top:40%;
+}
+.mid-section{
+    display: flex;
+    height:170px;
+    flex-direction: row;
+    transform: translate(0px , 315px);
+    color:rgb(9, 9, 9);
+    border-bottom: 1px solid rgb(184, 183, 183);
+
+}
+.weltxt{
+    padding-top:25px;
+    font-size: 12px;
+    padding-left: 25px;
+    font-family:DM Sans;
+    margin-right:80px;
+}
+
+.profimg{
+    width:350px;
+    height:115px;
+    border-radius:30px;
+    margin-top:25px;
+    margin-right:45px;
+    transition: scale() 2s;
+
+}
+.profimg img{
+    object-fit: cover;
+    width:100%;
+    height:100%;
+    border-radius:30px;
+    box-shadow: 0 1px 1px rgba(0,0,0,0.12), 0 2px 2px rgba(0,0,0,0.12), 0 4px 4px rgba(0,0,0,0.12), 0 8px 8px rgba(0,0,0,0.12), 0 16px 16px rgba(0,0,0,0.12);
+    transition:  transform 0.3s;
     user-select: none;
+    
 }
-.clgname:hover{
-
-
+.profimg :hover{
+    cursor:pointer;
+    transform:scale(1.2);
+   
 }
 
+.techstack{
+    position:absolute;
+    display:flex;
+    height:105px;
+    transform:translate(0px, 500px);
+    margin-left:22px;
+    
+}
 
+.techused p{
+    white-space: nowrap;
+    font-size: 12px;
+    margin:0px 0px 10px 0px;
+    
+}
+.techused img{
+    width:100px;
+    margin-left:42px;
+}
+
+.inspiration{
+    border-left:1px solid rgb(184, 183, 183);
+    width:190px;
+    margin-left:105px;
+    font-size:12px;
+    padding-left: 50px;
+}
+.inspiration p{
+    margin:0px;
+}
+.inspiration a{
+    text-decoration: none;
+}
+footer{
+    position:absolute;
+    display:flex;
+    width:100%;
+    height:100px;
+    transform:translate(0px, 640px );
+    background-color: #9deff2;
+}
+            
