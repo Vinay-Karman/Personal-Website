@@ -28,10 +28,10 @@ a:visited{
 .home{
     position:absolute;
     display: flex;
-    top:6px;
+    top:20px;
     left:25px;
     font-weight: 300;
-    font-size:10px;
+    font-size:25px;
     color:white;
     padding:5px 10px 5px 10px;
     border-radius:2px;
@@ -43,25 +43,25 @@ a:visited{
     position: absolute; 
     display: flex; 
     padding-left: 460px;
-    margin-top:12px;
+    margin-top:30px;
     right:2px;
 }
 .header div{
     display: inline;
     color:white;
-    font-size:8px;
+    font-size:20px;
     font-weight: 300;
-    margin-right:15px;
+    margin-right:60px;
 }
 .location{
     position: absolute;
-    top:100px;
+    top:200px;
     
 }
 .location div{
     display: flex;
     color:white;
-    font-size:12px;
+    font-size:30px;
     font-weight: 400;
     box-shadow: 0 0 0px 0 ;
     background: inherit;
@@ -87,9 +87,9 @@ background: linear-gradient(to right, #FF671F 0%, #9A9A9A 41%, #046A38 53%);
     color:white;
     position:absolute;
     display: flex;
-    grid-template-rows: 1fr;
     top:30%;
     left:64%;
+    transform: scale(2.5);
 }
 .clgnameintro div{
     position:absolute;
@@ -134,24 +134,26 @@ background: linear-gradient(to right, #FF671F 0%, #9A9A9A 41%, #046A38 53%);
 }
 .mid-section{
     display: flex;
-    height:170px;
+    height:250px;
     flex-direction: row;
-    transform: translate(0px , 315px);
+    transform: translate(0px , 800px);
     color:rgb(9, 9, 9);
     border-bottom: 1px solid rgb(184, 183, 183);
 
 }
 .weltxt{
+    min-width: 400px;
+    max-width: 900px;
     padding-top:25px;
-    font-size: 12px;
-    padding-left: 25px;
+    font-size: 25px;
+    padding-left: 49px;
     font-family:DM Sans;
     margin-right:80px;
 }
 
 .profimg{
-    width:350px;
-    height:115px;
+    width:270px;
+    height:220px;
     border-radius:30px;
     margin-top:25px;
     margin-right:45px;
@@ -160,6 +162,7 @@ background: linear-gradient(to right, #FF671F 0%, #9A9A9A 41%, #046A38 53%);
 }
 .profimg img{
     object-fit: cover;
+    margin-top: -10px;
     width:100%;
     height:100%;
     border-radius:30px;
@@ -170,7 +173,7 @@ background: linear-gradient(to right, #FF671F 0%, #9A9A9A 41%, #046A38 53%);
 }
 .profimg :hover{
     cursor:pointer;
-    transform:scale(1.2);
+    transform:scale(1.1);
    
 }
 
@@ -178,28 +181,30 @@ background: linear-gradient(to right, #FF671F 0%, #9A9A9A 41%, #046A38 53%);
     position:absolute;
     display:flex;
     height:105px;
-    transform:translate(0px, 500px);
-    margin-left:22px;
+    transform:translate(0px, 1100px);
+    margin-left:50px;
     
 }
 
+
 .techused p{
     white-space: nowrap;
-    font-size: 12px;
-    margin:0px 0px 10px 0px;
+    font-size: 25px;
+    margin:0px 0px 30px 0px;
     
 }
 .techused img{
-    width:100px;
+    width:200px;
     margin-left:42px;
 }
 
 .inspiration{
     border-left:1px solid rgb(184, 183, 183);
-    width:190px;
-    margin-left:105px;
-    font-size:12px;
-    padding-left: 50px;
+    width:400px;
+    margin-left:305px;
+    font-size:25px;
+    padding-left: 100px;
+    height:200px;
 }
 .inspiration p{
     margin:0px;
@@ -207,12 +212,54 @@ background: linear-gradient(to right, #FF671F 0%, #9A9A9A 41%, #046A38 53%);
 .inspiration a{
     text-decoration: none;
 }
+.quote{
+    display: flex;
+    position:absolute;
+    transform: translate(0px , 1350px);
+    margin-left: 40px;
+    margin-right:20px;
+    
+}
+.quote p{
+    font-family: Kalam;
+    font-size: 60px;
+    margin-top:0px;
+    letter-spacing: 2px;
+    line-height:140px;
+}
 footer{
     position:absolute;
-    display:flex;
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
     width:100%;
-    height:100px;
-    transform:translate(0px, 640px );
-    background-color: #9deff2;
+    height:200px;
+    transform:translate(0px, 1650px );
+    background: #36D1DC;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #5B86E5, #36D1DC);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #5B86E5, #36D1DC); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    align-items: center;
+
 }
-            
+footer div{
+    padding-top:10px;
+    margin-left:40px;
+
+}
+.socials{
+    width:50px;
+    transition: transform 0.2s;
+}
+.socials:hover{
+    cursor:pointer;
+    transform: scale(1.3);
+}
+.email{
+    font-size: 18px;
+    transition: transform 0.2s;
+    margin-right:30px;
+}        
+.email:hover{
+    cursor:pointer;
+    transform: scale(1.1);
+    
+}
