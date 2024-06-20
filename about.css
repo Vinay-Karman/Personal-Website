@@ -1,0 +1,124 @@
+body{
+    margin:0px;
+    padding:0px;
+    font-family: DM Sans;
+    background-color: #fffaf1;
+    user-select: none;
+    scroll-behavior: smooth;
+}
+a{
+    text-decoration: none;
+}
+a:visited{
+    color:inherit;
+    
+}
+.scroll-watcher{
+    position: fixed;
+    height:7px;
+    top:0;
+    z-index:1000;
+    background: rgb(104, 213, 230);
+    width:100%;
+    scale: 0 1;
+    transform-origin: left;
+    animation: scroll-watcher linear;
+    animation-timeline: scroll();
+}
+
+.home{
+    display:inline-block;
+    position:absolute;
+    width: 300px;
+    left:20px;
+}
+
+.header{
+    display: flex;
+    min-width:1075px;
+    position:relative;
+    width:100%;
+    justify-content: end;
+    margin-top: 30px;
+    padding-bottom:25px;
+    /* border-bottom: 2px solid black; */
+}
+.header div{
+    margin-right:60px;
+    font-size: 20px;
+}
+
+.header div:hover{
+    cursor:pointer;
+    animation:wiggle 0.3s;
+}
+.about{
+    border-bottom:1px solid black; 
+}
+
+.mid-sec{
+    display: flex;
+    flex-direction: column;
+    font-size: 25px;
+    line-height:36px;
+}
+.iam,
+.journey,
+.hobby,
+.aspire {
+    margin-bottom:20px;
+    padding:0px 20px 30px 40px;
+    border-bottom:1px solid black; 
+
+}
+
+.hobby{
+    line-height:55px ;
+}
+h3{
+    margin-top:7px;
+}
+
+.connect{
+    border:none;
+    padding-left:40px;
+    margin-bottom:50px;
+}
+
+
+footer{
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    width:100%;
+    height:200px;
+    background: #36D1DC;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #5B86E5, #36D1DC);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #5B86E5, #36D1DC); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    align-items: center;
+
+}
+footer div{
+    padding-top:10px;
+    margin-left:40px;
+
+}
+.socials{
+    width:50px;
+    transition: transform 0.2s;
+}
+.socials:hover{
+    cursor:pointer;
+    transform: scale(1.3);
+}
+.email{
+    font-size: 18px;
+    transition: transform 0.2s;
+    margin-right:30px;
+}        
+.email:hover{
+    cursor:pointer;
+    transform: scale(1.1);
+    
+}
+
+
