@@ -7,9 +7,7 @@ html , body{
 
     
 }
-/* div{
-    border:1px solid red;
-} */
+
 body{
     position: relative; 
     display: flex;
@@ -22,9 +20,27 @@ body{
     z-index: -100;
     user-select: none;
 }
+a{
+    text-decoration: none;
+}
 a:visited{
     color:inherit;
+    
 }
+.scroll-watcher{
+    position: fixed;
+    height:7px;
+    top:0;
+    z-index:1000;
+    background: rgb(104, 213, 230);
+    width:100%;
+    scale: 0 1;
+    transform-origin: left;
+    animation: scroll-watcher linear;
+    animation-timeline: scroll();
+}
+
+
 .home{
     position:absolute;
     display: flex;
@@ -33,11 +49,14 @@ a:visited{
     font-weight: 300;
     font-size:25px;
     color:white;
-    padding:5px 10px 5px 10px;
+    padding:5px 0px 2px 0px;
     border-radius:2px;
-    cursor:pointer;
-    
-    
+    cursor:pointer;   
+    border-bottom:1px solid white;   
+}
+
+.home:hover{
+    animation: wiggle 0.3s;
 }
 .header{
     position: absolute; 
@@ -52,6 +71,11 @@ a:visited{
     font-size:20px;
     font-weight: 300;
     margin-right:60px;
+    
+}
+.header div:hover{
+    cursor: pointer;
+    animation:wiggle 0.3s;
 }
 .location{
     position: absolute;
@@ -137,9 +161,7 @@ background: linear-gradient(to right, #FF671F 0%, #9A9A9A 41%, #046A38 53%);
     height:250px;
     flex-direction: row;
     transform: translate(0px , 800px);
-    color:rgb(9, 9, 9);
     border-bottom: 1px solid rgb(184, 183, 183);
-
 }
 .weltxt{
     min-width: 400px;
@@ -147,8 +169,8 @@ background: linear-gradient(to right, #FF671F 0%, #9A9A9A 41%, #046A38 53%);
     padding-top:25px;
     font-size: 25px;
     padding-left: 49px;
-    font-family:DM Sans;
     margin-right:80px;
+    
 }
 
 .profimg{
@@ -167,9 +189,7 @@ background: linear-gradient(to right, #FF671F 0%, #9A9A9A 41%, #046A38 53%);
     height:100%;
     border-radius:30px;
     box-shadow: 0 1px 1px rgba(0,0,0,0.12), 0 2px 2px rgba(0,0,0,0.12), 0 4px 4px rgba(0,0,0,0.12), 0 8px 8px rgba(0,0,0,0.12), 0 16px 16px rgba(0,0,0,0.12);
-    transition:  transform 0.3s;
-    user-select: none;
-    
+    transition:  transform 0.3s;   
 }
 .profimg :hover{
     cursor:pointer;
@@ -209,9 +229,7 @@ background: linear-gradient(to right, #FF671F 0%, #9A9A9A 41%, #046A38 53%);
 .inspiration p{
     margin:0px;
 }
-.inspiration a{
-    text-decoration: none;
-}
+
 .quote{
     display: flex;
     position:absolute;
