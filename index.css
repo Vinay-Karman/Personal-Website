@@ -1,0 +1,19 @@
+body{
+    display: flex;
+    background-color: #fffaf1;
+    justify-content: center;
+    margin:300px;
+    
+    
+}
+
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: DM Sans;
+    font-size: 60px;
+    width:300px;
+    height:100px;
+}
+

@@ -1,3 +1,11 @@
+if (!localStorage.getItem('visited')) {
+    window.location.href = 'index.html';
+} else {
+    localStorage.removeItem('visited');
+}
+
+
+
 ScrollReveal({
     reset:true,
     duration:900,
@@ -25,5 +33,8 @@ ScrollReveal().reveal('.quote',{ delay:100, duration: 1000,  distance:'100px' , 
 
 
 ScrollReveal().reveal('footer div',{ delay:100, duration: 700,  distance:'50px' , origin:'bottom', interval:100} );
+
+
+
 
 
