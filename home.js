@@ -32,7 +32,7 @@ ScrollReveal().reveal('.quote',{ delay:100, duration: 1000,  distance:'100px' , 
 
 
 
-ScrollReveal().reveal('footer div',{ delay:100, duration: 700,  distance:'50px' , origin:'bottom', interval:100} );
+ScrollReveal().reveal('.fotter-row1',{ delay:100, duration: 700,  distance:'50px' , origin:'bottom', interval:100} );
 
 
 

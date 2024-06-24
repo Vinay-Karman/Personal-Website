@@ -7,6 +7,8 @@ ScrollReveal({
 
 
 ScrollReveal().reveal('.header' );
+
 ScrollReveal().reveal('.iam , .journey , .hobby , .aspire , .connect' ,{ delay: 200 , duration: 700, origin:'left'} );
-ScrollReveal().reveal('footer div',{ delay:100, duration: 700 , distance:'50px', origin:'bottom', interval:100} );
+
+ScrollReveal().reveal('.fotter-row1',{ delay:100, duration: 700,  distance:'50px' , origin:'bottom', interval:100} );
 

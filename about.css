@@ -18,7 +18,7 @@ a:visited{
     height:7px;
     top:0;
     z-index:1000;
-    background: rgb(104, 213, 230);
+    background: #ffca6a;
     width:100%;
     scale: 0 1;
     transform-origin: left;
@@ -87,18 +87,39 @@ h3{
 
 footer{
     display:grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-    width:100%;
+    margin-top:20px;
+    grid-template-rows: 1fr 1fr;
+    row-gap: 20px;
     height:200px;
     background-color:#ffe5b6;
+
+
+}
+
+.fotter-row1{
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    height:150px;
     align-items: center;
+    margin-left:30px;
 
 }
-footer div{
-    padding-top:10px;
-    margin-left:40px;
+
+.fotter-row2{
+    display: flex;
+    justify-content: space-between;
+    height:20px;
+    margin-left: 30px;
 
 }
+
+.lastupdate{
+    padding-left:100px;
+}
+.rnd{
+    margin-right: 30px;
+}
+
 .socials{
     width:50px;
     transition: transform 0.2s;
@@ -109,13 +130,8 @@ footer div{
 }
 .email{
     font-size: 18px;
-    transition: transform 0.2s;
     margin-right:30px;
 }        
-.email:hover{
-    cursor:pointer;
-    transform: scale(1.1);
-    
-}
+
 
 
