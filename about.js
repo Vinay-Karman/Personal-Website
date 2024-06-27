@@ -1,14 +1,7 @@
-// let dis = "0";
-
-
-// window.addEventListener("resize", function() {
-    
-//     if (window.innerWidth < 700) {
-//       dis = "100";
-//     } else {
-//       dis = "100";
-//     }
-//   });
+const preloader = document.querySelector(".preloader");
+window.addEventListener("load" , () =>{
+    preloader.style.display = "none";
+})
 
 
 

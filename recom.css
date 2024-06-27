@@ -257,30 +257,29 @@ h2{
 
 
 .yt1{
-    display:flex;
-    width:690px;
-    height:94px;
-    box-shadow: 0 8px 14px 0 rgba(0,0,0,0.2);
-    border-radius:1rem;
-    margin-bottom:15px;
-    margin-right:20px;
-    overflow:visible;
+  display:flex;
+  width:690px;
+  height:94px;
+  box-shadow: 0 8px 14px 0 rgba(0,0,0,0.2);
+  border-radius:1rem;
+  margin-bottom:15px;
+  margin-right:20px;
+  overflow:visible;
 }
 
 
 
 .yt1 img{
-    flex:1;
-    width:170px;
-    border-radius:1rem;
-    transition: transform 0.5s !important;
-    will-change: transform;
-    z-index:100;
+  flex:1;
+  width:170px;
+  border-radius:1rem;
+  transition: transform 0.5s !important;
+  will-change: transform;
+  z-index:100;
 }
 
 .yt1 img:hover{
-    border: 2px solid red;
-    transform:scale(1.3) !important;
+  transform:scale(1.3) !important;
 }
 .yt1 p{
     flex:5;
