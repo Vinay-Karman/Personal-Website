@@ -26,7 +26,7 @@ ScrollReveal().reveal('.header',{duration:1200 , delay:700} );
 
 ScrollReveal().reveal('.clgnameintro' ,{ delay: 700 , origin:'left' , distance:'100px' });
 
-ScrollReveal().reveal('.weltxt',{ delay:100, duration: 700,  distance:'100px' , origin:'left'} );
+
 
 ScrollReveal().reveal('.profimg',{ delay:100, duration: 700,  distance:'100px' , origin:'bottom'} );
 
