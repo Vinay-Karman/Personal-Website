@@ -1,3 +1,9 @@
+const preloader = document.querySelector(".preloader");
+window.addEventListener("load" , () =>{
+    preloader.style.display = "none";
+})
+
+
 if (!localStorage.getItem('visited')) {
     window.location.href = 'index.html';
 } else {
