@@ -5,6 +5,7 @@ body{
     background-color: #fffaf1;
     user-select: none;
     scroll-behavior: smooth;
+    overflow-x: hidden;
 }
 a{
     text-decoration: none;
@@ -138,7 +139,7 @@ a:visited{
     animation-delay: calc(var(--tap-stagger) * 3);
     filter: brightness(100%);
     animation-name: tap-upper-4;
-  }
+}
   
   
   
@@ -192,8 +193,10 @@ a:visited{
 
 .mid-sec{
     display: grid;
-    min-width: 1380px;
+    min-width: 100%;
     grid-template-rows:1150px 500px ;
+
+
 }
 
 
@@ -269,28 +272,23 @@ h2{
     justify-content: center;
     align-items: center;
     width:200px;
+    height:250px;
     margin-bottom: 10px;
     margin-right:10px;
     border-bottom: 1px solid grey;
     border-right: 1px solid grey; 
     border-radius: 1rem;
     box-shadow: 0 8px 14px 0 rgba(0,0,0,0.2);
-    object-fit: cover;
-    overflow:visible;
 }
 
 .roww div img{
-    will-change: transform;
     transition: transform 0.4s;
-    object-fit: cover;
     border-radius: 1rem;
     width:150px;
-    z-index:10 !important;
 }
 
 .roww div img:hover{
-    transform: scale(1.5);
-    z-index:100 !important;
+    transform: scale(1.27);
 }
 
 /* Music Section */

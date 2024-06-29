@@ -26,7 +26,7 @@ ScrollReveal().reveal('.yt1 img',{ delay:400, duration: 400,  distance:'100px' ,
 ScrollReveal().reveal('.yt1 p',{ delay:400, duration: 400,  distance:'100px' , origin:'right'} );
 
 
-ScrollReveal().reveal('.roww div  ',{ delay:50, duration: 700,  distance:'100px' , origin:'left', interval:100 } );
+ScrollReveal().reveal('.roww  ',{ delay:200, duration: 700,  distance:'100px' , origin:'left', interval:100 } );
 
 ScrollReveal().reveal(' .music-template',{ delay:50, duration: 700,  distance:'100px' , origin:'right', interval:100 } );
 

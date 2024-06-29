@@ -30,6 +30,8 @@ ScrollReveal().reveal('.clgnameintro' ,{ delay: 700 , origin:'left' , distance:'
 
 ScrollReveal().reveal('.profimg',{ delay:100, duration: 700,  distance:'100px' , origin:'bottom'} );
 
+ScrollReveal().reveal('.weltxt',{ delay:100, duration: 700,  distance:'100px' , origin:'left'} );
+
 ScrollReveal().reveal('.techused',{ delay:100, duration: 700,  distance:'100px' , origin:'left'} );
 
 ScrollReveal().reveal('.inspiration',{ delay:100, duration: 700,  distance:'100px' , origin:'right'} );
