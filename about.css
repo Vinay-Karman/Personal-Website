@@ -137,45 +137,6 @@ a:visited{
     animation-name: tap-upper-4;
   }
   
-  @keyframes tap-upper-1 {
-    0%, 50%, 100% {
-      transform: rotate(10deg) scale(0.4);
-    }
-  
-    40% {
-      transform: rotate(50deg) scale(0.4);
-    }
-  }
-  
-  @keyframes tap-upper-2 {
-    0%, 50%, 100% {
-      transform: rotate(10deg) scale(0.6);
-    }
-  
-    40% {
-      transform: rotate(50deg) scale(0.6);
-    }
-  }
-  
-  @keyframes tap-upper-3 {
-    0%, 50%, 100% {
-      transform: rotate(10deg) scale(0.8);
-    }
-  
-    40% {
-      transform: rotate(50deg) scale(0.8);
-    }
-  }
-  
-  @keyframes tap-upper-4 {
-    0%, 50%, 100% {
-      transform: rotate(10deg) scale(1);
-    }
-  
-    40% {
-      transform: rotate(50deg) scale(1);
-    }
-}
 .scroll-watcher{
     position: fixed;
     height:7px;
@@ -299,60 +260,6 @@ footer{
 }        
 
 
-@media( width <=425px){
-    .header div{
-        font-size: 1.75rem;
-        min-width:0px;
-        margin-right: 20px;
-    
-    }
 
-    footer{
-        display:grid;
-        min-width: 875px;
-        margin-top:20px;
-        grid-template-rows: 1fr 1fr;
-        row-gap: 14px;
-        height:8rem;
-        background-color:#ffe5b6;
-    
-    
-    }
-    
-    .fotter-row1{
-        display:grid;
-        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-        height:80px;
-        align-items: center;
-        margin-left:30px;
-    
-    }
-    
-    .fotter-row2{
-        display: flex;
-        justify-content: space-between;
-        height:20px;
-        margin-left: 30px;
-    
-    }
-    
-    .lastupdate{
-        padding-left:100px;
-    }
-    .rnd{
-        margin-right: 30px;
-    }
-    
-    .socials{
-        width:50px;
-        transition: transform 0.2s;
-    }
-    .email{
-        font-size: 12px;
-        margin-right:30px;
-    }  
-
-    
-}
 
 
